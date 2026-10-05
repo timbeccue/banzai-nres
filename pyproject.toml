@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "banzai-nres"
-version = "1.3.1"
+version = "1.3.2"
 requires-python = ">=3.11,<4"
 description = "BANZAI Data Reduction for NRES spectra"
 readme = "docs/README.rst"
@@ -18,7 +18,8 @@ keywords = ["astronomy", "spectroscopy", "data reduction", "Las Cumbres Observat
 urls = { "Documentation" = "https://banzai-nres.readthedocs.io/", "Source" = "https://github.com/lcogt/banzai-nres" }
 
 dependencies = [
-    "lco-banzai @ git+https://github.com/lcogt/banzai.git@1.35.2",
+    "lco-banzai>=1.39.1",
+    "torch",
     "statsmodels",
     "xwavecal @ git+https://github.com/lcogt/xwavecal.git@0.2.0",
     "astroquery",

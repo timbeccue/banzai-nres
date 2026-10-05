@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.11, <4"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -74,8 +74,8 @@ wheels = [
 
 [[package]]
 name = "astropy"
-version = "7.3.dev1+gd7e7dcd0e"
-source = { git = "https://github.com/cmccully/astropy.git?rev=fix%2Ffunpack#d7e7dcd0e561c671d7543bdc56e03f17fc1de216" }
+version = "8.0.1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "astropy-iers-data" },
     { name = "numpy" },
@@ -83,14 +83,25 @@ dependencies = [
     { name = "pyerfa" },
     { name = "pyyaml" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/0e/c4/21be4313ddfde5f60e0607fd307f367b9e0f0bf153a89b10cbd036dd8cfd/astropy-8.0.1.tar.gz", hash = "sha256:45ca31d5b91fa294cd590a4791a32db94de7f9c8a343155f4d5877baa82351da", size = 7152500, upload-time = "2026-07-05T07:24:48.482Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ac/80/69a84af0b35d55a859cde38e16b71553840a156bdf7dc4b767ec2b2d2829/astropy-8.0.1-cp311-abi3-macosx_10_9_x86_64.whl", hash = "sha256:24813c764d5ea111e7f716127121e22a0cfe233ca1eac2ed23c4a3848390610e", size = 6635649, upload-time = "2026-07-05T07:24:31.957Z" },
+    { url = "https://files.pythonhosted.org/packages/a6/34/074f367d5699a1008b24c50acc1539f05f2cfc881b1901f4b110d57eae20/astropy-8.0.1-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:222f0b9837e79fd3d101e6d4e4579e3aa98c490000bb01e35cd32fd3e3c12bf5", size = 6607950, upload-time = "2026-07-05T07:24:34.148Z" },
+    { url = "https://files.pythonhosted.org/packages/56/3b/d29035da0a08e3b0b03d63abe9ce69b900d8ef7863dc557a2e34ebf56a4e/astropy-8.0.1-cp311-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:9a4044396c15969bb029b648521f7c25d294e982dbd23e7c2c7dd328178b8b98", size = 10414634, upload-time = "2026-07-05T07:24:36.129Z" },
+    { url = "https://files.pythonhosted.org/packages/fa/14/6f4427419f8a02e1d0a885fb64d8d4454c5d443627aa7cb1a3a36e16abb7/astropy-8.0.1-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:fa11d56855e10107ea2231a6b6a33dbf1edbea6890adf34634c1f1d8f25c5a5a", size = 10452095, upload-time = "2026-07-05T07:24:38.424Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/ef/a5cf36a402c4511a776405f12d0b35196f55f4312ce407012a2fbcf1e4e0/astropy-8.0.1-cp311-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:5b482bc6c57c966e6c6234410a1d9afbcf92bcac858cf287812f8c99ddc3fafc", size = 10407732, upload-time = "2026-07-05T07:24:40.774Z" },
+    { url = "https://files.pythonhosted.org/packages/58/6d/59e7fb6f9ade53889c9553afff89991b8076c021581ba66eb51d913ca6c9/astropy-8.0.1-cp311-abi3-win32.whl", hash = "sha256:13a6ef59347a15c55406bb630e0d25d0248a179af84fae06a7ddb85a229065b2", size = 6394540, upload-time = "2026-07-05T07:24:43.146Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/6a/8534fd98e2d3eb51cbaa261e6c6b59e4ad969a1787d72bb1208499080dbd/astropy-8.0.1-cp311-abi3-win_amd64.whl", hash = "sha256:ee9024f2237243ebc98726f8eff2efbf201ea4e0bba1d21f6e2dee0cb499fbdf", size = 6529976, upload-time = "2026-07-05T07:24:44.693Z" },
+    { url = "https://files.pythonhosted.org/packages/8a/df/96b8bf4ec218d03969a8b904ade5fc5b1a63f4a7f02c4e107b6264bcf152/astropy-8.0.1-cp311-abi3-win_arm64.whl", hash = "sha256:435e784f2cd9a4c31a03102e6ad27a51b901a8d5587bc78afe8d28e41eb44824", size = 6395252, upload-time = "2026-07-05T07:24:46.56Z" },
+]
 
 [[package]]
 name = "astropy-iers-data"
-version = "0.2026.4.6.0.54.57"
+version = "0.2026.10.5.1.0.7"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2e/10/a5e7ffb532c10412ba18a94a91057d244c1bf294275b7063716d9a128d14/astropy_iers_data-0.2026.4.6.0.54.57.tar.gz", hash = "sha256:d248c5e154c61536533688787d14c0f45c1e22f599670e7399ed493b21c5d2a5", size = 1929792, upload-time = "2026-04-06T00:55:37.521Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/5f/12684e98828ebef9192e9b069cc101b264f262677017fb7deb5ec16445f7/astropy_iers_data-0.2026.10.5.1.0.7.tar.gz", hash = "sha256:f344da10d7d5485f3d14cebbd2be78cdd800b72c4ab325d5908508c8217b822f", size = 1949084, upload-time = "2026-10-05T01:00:48.444Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d2/96/97e6e46c8198015b0dcd3709794b358aae42a18e5a1bed393dc34307165f/astropy_iers_data-0.2026.4.6.0.54.57-py3-none-any.whl", hash = "sha256:e3d85850ccfd2e68f797c417cd1cc30fe1bdbd54c3a6ec6e48c307c879858ac4", size = 1986669, upload-time = "2026-04-06T00:55:35.946Z" },
+    { url = "https://files.pythonhosted.org/packages/4e/cb/a175769c131847571bc18298fd04790e00fd308fdc015e947f7fc0581a7e/astropy_iers_data-0.2026.10.5.1.0.7-py3-none-any.whl", hash = "sha256:ee1e4363aa398869e7ffea98e48fdfde6ab97463a1a9d977f3fbd68649a1896b", size = 2004559, upload-time = "2026-10-05T01:00:46.955Z" },
 ]
 
 [[package]]
@@ -151,6 +162,18 @@ wheels = [
 ]
 
 [[package]]
+name = "auto-stretch"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/57/7a/7a44e43ef7e76cc186ae8cc7792978eeac31e272386c7bc617c231999a20/auto_stretch-1.1.0.tar.gz", hash = "sha256:c8c91dbb1c32914d64f9ec065df5abe274f9b5f707f4497deba8fcb05acc4ab9", size = 1060848, upload-time = "2026-07-03T16:08:12.828Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/16/af03a65d260bd3d8634d8e3bb6423cbae5b9c52f4b9709611d2592177da4/auto_stretch-1.1.0-py3-none-any.whl", hash = "sha256:5029de2771f5de667a6663c4f21ac7d1fc8c6d23e4293789892955651dbca4e4", size = 5308, upload-time = "2026-07-03T16:08:11.686Z" },
+]
+
+[[package]]
 name = "babel"
 version = "2.18.0"
 source = { registry = "https://pypi.org/simple" }
@@ -170,7 +193,7 @@ wheels = [
 
 [[package]]
 name = "banzai-nres"
-version = "1.3.1"
+version = "1.3.2"
 source = { editable = "." }
 dependencies = [
     { name = "astropy" },
@@ -181,6 +204,8 @@ dependencies = [
     { name = "photutils" },
     { name = "sep" },
     { name = "statsmodels" },
+    { name = "torch", version = "2.11.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
+    { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
     { name = "xwavecal" },
 ]
 
@@ -208,7 +233,7 @@ requires-dist = [
     { name = "astroquery" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "ipykernel", marker = "extra == 'docs'" },
-    { name = "lco-banzai", git = "https://github.com/lcogt/banzai.git?rev=1.35.2" },
+    { name = "lco-banzai", specifier = ">=1.39.1" },
     { name = "matplotlib" },
     { name = "mock", marker = "extra == 'test'" },
     { name = "nbsphinx", marker = "extra == 'docs'" },
@@ -222,6 +247,8 @@ requires-dist = [
     { name = "sphinx-pyproject", marker = "extra == 'docs'" },
     { name = "sphinx-rtd-theme", marker = "extra == 'docs'" },
     { name = "statsmodels" },
+    { name = "torch", marker = "sys_platform != 'darwin'", index = "https://download.pytorch.org/whl/cpu" },
+    { name = "torch", marker = "sys_platform == 'darwin'" },
     { name = "xwavecal", git = "https://github.com/lcogt/xwavecal.git?rev=0.2.0" },
 ]
 provides-extras = ["test", "docs", "style"]
@@ -705,7 +732,7 @@ wheels = [
 
 [package.optional-dependencies]
 cpu = [
-    { name = "torch", version = "2.11.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform == 'darwin'" },
+    { name = "torch", version = "2.11.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
 ]
 
@@ -1589,12 +1616,13 @@ wheels = [
 
 [[package]]
 name = "lco-banzai"
-version = "1.35.2"
-source = { git = "https://github.com/lcogt/banzai.git?rev=1.35.2#f790cbe87995daf73502cb406466b63fc073ec3a" }
+version = "1.39.1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alembic" },
     { name = "apscheduler" },
     { name = "astropy" },
+    { name = "auto-stretch" },
     { name = "bottleneck" },
     { name = "celery", extra = ["redis"] },
     { name = "cosmic-conn", extra = ["cpu"] },
@@ -1608,6 +1636,7 @@ dependencies = [
     { name = "ocs-ingester" },
     { name = "opensearch-py" },
     { name = "photutils" },
+    { name = "pillow" },
     { name = "psycopg", extra = ["binary"] },
     { name = "pytest" },
     { name = "python-dateutil" },
@@ -1617,8 +1646,25 @@ dependencies = [
     { name = "scipy" },
     { name = "sqlalchemy" },
     { name = "tenacity" },
-    { name = "torch", version = "2.11.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform == 'darwin'" },
+    { name = "torch", version = "2.11.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e4/7f/1ebc4789003869613741e9081016fcac229eb93e46e82b7222de6d64afc6/lco_banzai-1.39.1.tar.gz", hash = "sha256:311083f0240568590f72d68f7a5669f407ad2cdd663f2932570ec54397d4bedd", size = 1073084, upload-time = "2026-09-29T20:14:26.801Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fd/ab/0678a4f8a8470f510b8a62d71ea6dc91debbe315f4d2005a635833edbfd7/lco_banzai-1.39.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bc5a973d1d6c71615a6b121cf5198c6b2a4cb2c3ec53e760068b6194a289146d", size = 1798205, upload-time = "2026-09-29T20:14:00.841Z" },
+    { url = "https://files.pythonhosted.org/packages/60/97/9d59115df3213af042ba01c08a76183149c9b7d16997c6cfd2b49567ca67/lco_banzai-1.39.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:758ffc2f0cfac2d6b7724a4e78d092e0c2ccf9e4ab4fe82a17b1c711f4f287c8", size = 1840247, upload-time = "2026-09-29T20:14:02.887Z" },
+    { url = "https://files.pythonhosted.org/packages/28/f4/fe3cc70f75078beee11ba9ac29c517bec9e6aa9916b0d1f8716ee6d24fda/lco_banzai-1.39.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9806dea20bc2c8f13a189f7dda3c12c633d9d4a0bac8a264b4484c2c76e14dea", size = 1954560, upload-time = "2026-09-29T20:14:04.844Z" },
+    { url = "https://files.pythonhosted.org/packages/59/04/ef6590c49421602987b047937a100da6f0ca82468fb5ac747e2f39aafce8/lco_banzai-1.39.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:f82a6481c02c82e2b7e80146cb98d06e759d517a289b01a1d2dcd35aa0d280bb", size = 1991360, upload-time = "2026-09-29T20:14:06.642Z" },
+    { url = "https://files.pythonhosted.org/packages/74/e5/0c4d6339e9828e5c6c40a50420a7af64c5967771f687c0eff7104c3912e8/lco_banzai-1.39.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3b803cc707afa590faec5ec8be17f86106d5aae016e9af94bbfa9a1ec9ecd63c", size = 1954821, upload-time = "2026-09-29T20:14:08.229Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/13/e9f687b6a676d5a157ad660f12640598ac3cda89cf3accd22a8564dac520/lco_banzai-1.39.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:6616b4d00ffcb14b6e529ea360827d2d32681efa54029cd0c225949ab3a19284", size = 1992740, upload-time = "2026-09-29T20:14:10.188Z" },
+    { url = "https://files.pythonhosted.org/packages/e8/2d/1a3b1d1d89f3c41ec330081cc74c0ece950a042b192bbb60f4ed2f3a2f14/lco_banzai-1.39.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6ceb73bc7b5fdfd31b587ee7a062143e39d03d43751487aa3d42ba552962bd8e", size = 1954372, upload-time = "2026-09-29T20:14:11.831Z" },
+    { url = "https://files.pythonhosted.org/packages/f1/2e/461264ce8ebe58d5e7a82d74c7fcdc46d6f3e781a79ea52dd48a54a719d8/lco_banzai-1.39.1-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:45908ef40bd84b5efe684b81e810efaa98b7d40e919347708cad2193146b9a4c", size = 1992865, upload-time = "2026-09-29T20:14:13.592Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/99/793632529f0a1b2d7596c2bd0aeae6f968e98bfbfb0b80c5888ab71b1047/lco_banzai-1.39.1-cp314-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9bfa5764f1e0244a316680f679fc69dee1bb398878ed85730b881210b8c2fc15", size = 1963860, upload-time = "2026-09-29T20:14:15.307Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/e2/2cc8d3e81bfd9d8e316851dfcebe52318ba6aa493c994b5ca44a62f6712c/lco_banzai-1.39.1-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:fa43befccc4cb4f886959df8b39193b26897ef5c26a15e24c78493f73a9c6b55", size = 1998348, upload-time = "2026-09-29T20:14:17.156Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/2d/57ee901420b1c5cdd2c247b9dd00cf644efda88c8403915a12df5a617879/lco_banzai-1.39.1-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:5f0a413b111facad2aa8cabb950edb6482f26f893569a4a8e73139e34216e8f0", size = 1965834, upload-time = "2026-09-29T20:14:19.204Z" },
+    { url = "https://files.pythonhosted.org/packages/37/64/1909b5ffafa1d4860719fbd58759ca32337ecbc4cf880f9368a5cf54bcf2/lco_banzai-1.39.1-cp315-cp315-musllinux_1_2_x86_64.whl", hash = "sha256:3e785d67d586619f77362bd8523c6fe8fcc1a4949226f981a5b93f58245b88d5", size = 2003111, upload-time = "2026-09-29T20:14:21.017Z" },
+    { url = "https://files.pythonhosted.org/packages/b4/27/6c1f023dbd2cfd05bfbaed23a41606938669ed3b0a82a716ce572df46de0/lco_banzai-1.39.1-cp315-cp315t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:82a5eef3ceeead00a848f09826a0f44c1ed2ebc36f9277ae7d39fddaf7cff384", size = 1961101, upload-time = "2026-09-29T20:14:22.984Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/42/0838841fce763ccbb47e940b23520578bdaa0b48d7af2674c0a231ae72fd/lco_banzai-1.39.1-cp315-cp315t-musllinux_1_2_x86_64.whl", hash = "sha256:9e7f1e490229cd483e24b3b29a64e3dd9a1b94d941008e40ffb3b0325c4658d6", size = 1995366, upload-time = "2026-09-29T20:14:24.587Z" },
 ]
 
 [[package]]
@@ -2058,7 +2104,7 @@ wheels = [
 [[package]]
 name = "ocs-archive"
 version = "0.5.0"
-source = { git = "https://github.com/observatorycontrolsystem/ocs_archive.git?rev=fix%2Freduction_level_parsing#6aeea9e1e91edd99e285b72c25d26498aa7ae517" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "astropy" },
     { name = "boto3" },
@@ -2066,11 +2112,15 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "requests" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/39/4d/b2833b176689241d61bd28f67ca91d863cdc0e371b70c1826d9b8910239c/ocs_archive-0.5.0.tar.gz", hash = "sha256:8db59b244747c70b7784713d7e56efd68030958a855aab9444e4ce381ae63474", size = 33678, upload-time = "2026-05-07T23:47:29.871Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f9/de/13e4ab57f43ed3b654fe2381f413bf45f1c1cb96366b0eec5c730263bd5a/ocs_archive-0.5.0-py3-none-any.whl", hash = "sha256:6216cb84c9f014be2f850736cafb3d2652b1c517977199f6eadd9949646b01be", size = 37309, upload-time = "2026-05-07T23:47:28.949Z" },
+]
 
 [[package]]
 name = "ocs-ingester"
 version = "3.2.0"
-source = { git = "https://github.com/observatorycontrolsystem/ingester?branch=fix%2Fpoetry_and_update_deps#440c3e84089f566a91eaeec8241e9253c5f51d57" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "astropy" },
     { name = "boto3" },
@@ -2080,6 +2130,10 @@ dependencies = [
     { name = "opentsdb-python-metrics" },
     { name = "python-dateutil" },
     { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/5f/c978138d89765704ff077683b1a0bd24c89aaa8945874dbdcc9bf1ec764e/ocs_ingester-3.2.0.tar.gz", hash = "sha256:f16d1924d7f3c017d77dac05bbb1250d626d191e82a5142acb332d3f3e58df6a", size = 23402, upload-time = "2026-05-08T04:55:45.677Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/78/80f326a415c10b145ca5e89106a586ff77cf5450fcd624564921b3b59cb0/ocs_ingester-3.2.0-py3-none-any.whl", hash = "sha256:b3166489a761767937c9494b0be9e566b8d7692a375f79b2834740b4f9aec21f", size = 24904, upload-time = "2026-05-08T04:55:44.53Z" },
 ]
 
 [[package]]
@@ -3653,7 +3707,7 @@ wheels = [
 [[package]]
 name = "torch"
 version = "2.11.0"
-source = { registry = "https://download.pytorch.org/whl/cpu" }
+source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'darwin'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'darwin'",
@@ -3669,12 +3723,12 @@ dependencies = [
     { name = "typing-extensions", marker = "sys_platform == 'darwin'" },
 ]
 wheels = [
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:d75eadcd97fe0dc7cd0eedc4d72152484c19cb2cfe46ce55766c8e129116425f", upload-time = "2026-03-23T15:16:54Z" },
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:43b35116802c85fb88d99f4a396b8bd4472bfca1dd82e69499e5a4f9b8b4e252", upload-time = "2026-03-23T15:16:58Z" },
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:442ec9dc78592564fdad69cf0beaa9da2f82ab810ccb4f13903869a90bf3f15d", upload-time = "2026-03-23T15:17:02Z" },
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:cc3a195701bba2239c313ee311487f80f8aaebe9e89b9073dddbcf2f93b5a0ba", upload-time = "2026-03-23T15:17:06Z" },
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:072a0d6e4865e8b0dc0dbfe6ebed68fae235124222835ef03e5814d414d8c012", upload-time = "2026-03-23T15:17:10Z" },
-    { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.11.0-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:23ec7789017da9d95b6d543d790814785e6f30905c5443efa8257d1490d73f79", upload-time = "2026-03-23T15:17:14Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/0d/98b410492609e34a155fa8b121b55c7dca229f39636851c3a9ec20edea21/torch-2.11.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:7b6a60d48062809f58595509c524b88e6ddec3ebe25833d6462eeab81e5f2ce4", size = 80529712, upload-time = "2026-03-23T18:12:02.608Z" },
+    { url = "https://files.pythonhosted.org/packages/6f/8b/69e3008d78e5cee2b30183340cc425081b78afc5eff3d080daab0adda9aa/torch-2.11.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:4b5866312ee6e52ea625cd211dcb97d6a2cdc1131a5f15cc0d87eec948f6dd34", size = 80606338, upload-time = "2026-03-23T18:11:34.781Z" },
+    { url = "https://files.pythonhosted.org/packages/87/89/5ea6722763acee56b045435fb84258db7375c48165ec8be7880ab2b281c5/torch-2.11.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:1e6debd97ccd3205bbb37eb806a9d8219e1139d15419982c09e23ef7d4369d18", size = 80606801, upload-time = "2026-03-23T18:10:18.649Z" },
+    { url = "https://files.pythonhosted.org/packages/db/38/8ac78069621b8c2b4979c2f96dc8409ef5e9c4189f6aac629189a78677ca/torch-2.11.0-cp313-cp313t-macosx_11_0_arm64.whl", hash = "sha256:8b394322f49af4362d4f80e424bcaca7efcd049619af03a4cf4501520bdf0fb4", size = 80959574, upload-time = "2026-03-23T18:10:14.214Z" },
+    { url = "https://files.pythonhosted.org/packages/26/0d/8603382f61abd0db35841148ddc1ffd607bf3100b11c6e1dab6d2fc44e72/torch-2.11.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:01018087326984a33b64e04c8cb5c2795f9120e0d775ada1f6638840227b04d7", size = 80573442, upload-time = "2026-03-23T18:09:10.117Z" },
+    { url = "https://files.pythonhosted.org/packages/bf/46/4419098ed6d801750f26567b478fc185c3432e11e2cad712bc6b4c2ab0d0/torch-2.11.0-cp314-cp314t-macosx_11_0_arm64.whl", hash = "sha256:8245477871c3700d4370352ffec94b103cfcb737229445cf9946cddb7b2ca7cd", size = 80959460, upload-time = "2026-03-23T18:09:00.818Z" },
 ]
 
 [[package]]

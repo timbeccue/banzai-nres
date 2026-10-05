@@ -5,7 +5,7 @@ from banzai.logs import get_logger
 import os
 import mock
 import numpy as np
-from banzai.utils import file_utils
+from banzai.utils.messaging import post_to_archive_queue
 import time
 from glob import glob
 from banzai.scheduling import app, schedule_calibration_stacking
@@ -90,11 +90,11 @@ def run_reduce_individual_frames(filename_pattern):
     logger.info('Reducing individual frames for filenames: {filenames}'.format(filenames=filename_pattern))
     for frame in TEST_FRAMES:
         if filename_pattern in frame['filename']:
-            file_utils.post_to_archive_queue(frame['filename'],
-                                             os.getenv('FITS_BROKER'),
-                                             frameid=frame['frameid'],
-                                             exchange_name=os.getenv('FITS_EXCHANGE'),
-                                             SITEID=frame['site'], INSTRUME=frame['camera'])
+            post_to_archive_queue(frame['filename'],
+                                  os.getenv('FITS_BROKER'),
+                                  frameid=frame['frameid'],
+                                  exchange_name=os.getenv('FITS_EXCHANGE'),
+                                  SITEID=frame['site'], INSTRUME=frame['camera'])
 
     celery_join()
     logger.info('Finished reducing individual frames for filenames: {filenames}'.format(filenames=filename_pattern))

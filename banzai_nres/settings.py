@@ -1,5 +1,6 @@
 import os
 import banzai_nres
+from banzai.settings import *  # noqa: F401,F403
 
 FRAME_FACTORY = 'banzai_nres.frames.NRESFrameFactory'
 
