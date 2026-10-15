@@ -233,7 +233,7 @@ requires-dist = [
     { name = "astroquery" },
     { name = "coverage", marker = "extra == 'test'" },
     { name = "ipykernel", marker = "extra == 'docs'" },
-    { name = "lco-banzai", specifier = ">=1.39.1" },
+    { name = "lco-banzai", specifier = ">=1.40.0" },
     { name = "matplotlib" },
     { name = "mock", marker = "extra == 'test'" },
     { name = "nbsphinx", marker = "extra == 'docs'" },
@@ -1616,7 +1616,7 @@ wheels = [
 
 [[package]]
 name = "lco-banzai"
-version = "1.39.1"
+version = "1.40.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alembic" },
@@ -1649,22 +1649,22 @@ dependencies = [
     { name = "torch", version = "2.11.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e4/7f/1ebc4789003869613741e9081016fcac229eb93e46e82b7222de6d64afc6/lco_banzai-1.39.1.tar.gz", hash = "sha256:311083f0240568590f72d68f7a5669f407ad2cdd663f2932570ec54397d4bedd", size = 1073084, upload-time = "2026-09-29T20:14:26.801Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/75/a640c9a5871031dc90e5bf1c085510f8d47365fe0e402d23055712a468ac/lco_banzai-1.40.0.tar.gz", hash = "sha256:ddf2ef623a5252a04d6feb616aeb921b3f2310ea30146fd1871f095aec4b2b65", size = 1076987, upload-time = "2026-10-13T21:37:00.333Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fd/ab/0678a4f8a8470f510b8a62d71ea6dc91debbe315f4d2005a635833edbfd7/lco_banzai-1.39.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bc5a973d1d6c71615a6b121cf5198c6b2a4cb2c3ec53e760068b6194a289146d", size = 1798205, upload-time = "2026-09-29T20:14:00.841Z" },
-    { url = "https://files.pythonhosted.org/packages/60/97/9d59115df3213af042ba01c08a76183149c9b7d16997c6cfd2b49567ca67/lco_banzai-1.39.1-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:758ffc2f0cfac2d6b7724a4e78d092e0c2ccf9e4ab4fe82a17b1c711f4f287c8", size = 1840247, upload-time = "2026-09-29T20:14:02.887Z" },
-    { url = "https://files.pythonhosted.org/packages/28/f4/fe3cc70f75078beee11ba9ac29c517bec9e6aa9916b0d1f8716ee6d24fda/lco_banzai-1.39.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9806dea20bc2c8f13a189f7dda3c12c633d9d4a0bac8a264b4484c2c76e14dea", size = 1954560, upload-time = "2026-09-29T20:14:04.844Z" },
-    { url = "https://files.pythonhosted.org/packages/59/04/ef6590c49421602987b047937a100da6f0ca82468fb5ac747e2f39aafce8/lco_banzai-1.39.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:f82a6481c02c82e2b7e80146cb98d06e759d517a289b01a1d2dcd35aa0d280bb", size = 1991360, upload-time = "2026-09-29T20:14:06.642Z" },
-    { url = "https://files.pythonhosted.org/packages/74/e5/0c4d6339e9828e5c6c40a50420a7af64c5967771f687c0eff7104c3912e8/lco_banzai-1.39.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3b803cc707afa590faec5ec8be17f86106d5aae016e9af94bbfa9a1ec9ecd63c", size = 1954821, upload-time = "2026-09-29T20:14:08.229Z" },
-    { url = "https://files.pythonhosted.org/packages/1d/13/e9f687b6a676d5a157ad660f12640598ac3cda89cf3accd22a8564dac520/lco_banzai-1.39.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:6616b4d00ffcb14b6e529ea360827d2d32681efa54029cd0c225949ab3a19284", size = 1992740, upload-time = "2026-09-29T20:14:10.188Z" },
-    { url = "https://files.pythonhosted.org/packages/e8/2d/1a3b1d1d89f3c41ec330081cc74c0ece950a042b192bbb60f4ed2f3a2f14/lco_banzai-1.39.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:6ceb73bc7b5fdfd31b587ee7a062143e39d03d43751487aa3d42ba552962bd8e", size = 1954372, upload-time = "2026-09-29T20:14:11.831Z" },
-    { url = "https://files.pythonhosted.org/packages/f1/2e/461264ce8ebe58d5e7a82d74c7fcdc46d6f3e781a79ea52dd48a54a719d8/lco_banzai-1.39.1-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:45908ef40bd84b5efe684b81e810efaa98b7d40e919347708cad2193146b9a4c", size = 1992865, upload-time = "2026-09-29T20:14:13.592Z" },
-    { url = "https://files.pythonhosted.org/packages/6e/99/793632529f0a1b2d7596c2bd0aeae6f968e98bfbfb0b80c5888ab71b1047/lco_banzai-1.39.1-cp314-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9bfa5764f1e0244a316680f679fc69dee1bb398878ed85730b881210b8c2fc15", size = 1963860, upload-time = "2026-09-29T20:14:15.307Z" },
-    { url = "https://files.pythonhosted.org/packages/9d/e2/2cc8d3e81bfd9d8e316851dfcebe52318ba6aa493c994b5ca44a62f6712c/lco_banzai-1.39.1-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:fa43befccc4cb4f886959df8b39193b26897ef5c26a15e24c78493f73a9c6b55", size = 1998348, upload-time = "2026-09-29T20:14:17.156Z" },
-    { url = "https://files.pythonhosted.org/packages/ed/2d/57ee901420b1c5cdd2c247b9dd00cf644efda88c8403915a12df5a617879/lco_banzai-1.39.1-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:5f0a413b111facad2aa8cabb950edb6482f26f893569a4a8e73139e34216e8f0", size = 1965834, upload-time = "2026-09-29T20:14:19.204Z" },
-    { url = "https://files.pythonhosted.org/packages/37/64/1909b5ffafa1d4860719fbd58759ca32337ecbc4cf880f9368a5cf54bcf2/lco_banzai-1.39.1-cp315-cp315-musllinux_1_2_x86_64.whl", hash = "sha256:3e785d67d586619f77362bd8523c6fe8fcc1a4949226f981a5b93f58245b88d5", size = 2003111, upload-time = "2026-09-29T20:14:21.017Z" },
-    { url = "https://files.pythonhosted.org/packages/b4/27/6c1f023dbd2cfd05bfbaed23a41606938669ed3b0a82a716ce572df46de0/lco_banzai-1.39.1-cp315-cp315t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:82a5eef3ceeead00a848f09826a0f44c1ed2ebc36f9277ae7d39fddaf7cff384", size = 1961101, upload-time = "2026-09-29T20:14:22.984Z" },
-    { url = "https://files.pythonhosted.org/packages/f7/42/0838841fce763ccbb47e940b23520578bdaa0b48d7af2674c0a231ae72fd/lco_banzai-1.39.1-cp315-cp315t-musllinux_1_2_x86_64.whl", hash = "sha256:9e7f1e490229cd483e24b3b29a64e3dd9a1b94d941008e40ffb3b0325c4658d6", size = 1995366, upload-time = "2026-09-29T20:14:24.587Z" },
+    { url = "https://files.pythonhosted.org/packages/a2/bd/bac2da4cc5e78e1ffeacebc9d59f5746bd73ac172f9c958b6309652965e8/lco_banzai-1.40.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:f0c5606f2b0a3a8ff66f8efefac30482be023600dbd552341038e851b2ae0bf8", size = 1801496, upload-time = "2026-10-13T21:36:33.863Z" },
+    { url = "https://files.pythonhosted.org/packages/a5/84/f65c49ebf5677d820088e4c02031467047f14a2ebed84d6b6457162ea61a/lco_banzai-1.40.0-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:9db0760430e69adad9706fa9d246948f6dd586c2c6761f9b71d786126487e7e4", size = 1843534, upload-time = "2026-10-13T21:36:36.199Z" },
+    { url = "https://files.pythonhosted.org/packages/34/8a/edcc0b1d0540ba5940e4a98a7444941b7018b99a0050a60d78ce23a47dce/lco_banzai-1.40.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:7d78ed77a553af9d8697cf1398da048b3e0d9f1cac846a39f45fa2bbce2176a9", size = 1957851, upload-time = "2026-10-13T21:36:38.095Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/c5/9a2b0b155c44a2b9fdd6b064d2f16ea92a4cbd7e68c471f2dffe47dc72ee/lco_banzai-1.40.0-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:4a6c2bea3cf9b6d3e2748792ac60439fa4187e961c9c1b58ae0f61283a7537e7", size = 1994640, upload-time = "2026-10-13T21:36:40.158Z" },
+    { url = "https://files.pythonhosted.org/packages/cd/2f/d4ad308c24177213335d7144023a66f30b4dbb0a37cf5c8283ba121a9aab/lco_banzai-1.40.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:1e32c4b6e22bbeaf037ac265f144dfe96c3aa404e0f1697d2fc29dad4eb3ad60", size = 1958112, upload-time = "2026-10-13T21:36:42.069Z" },
+    { url = "https://files.pythonhosted.org/packages/03/5a/9be7c024a109199d9cad3b184b9ed019e03f57a3caffcc1b7ac50092124c/lco_banzai-1.40.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:b6ba38ff3acf5c2c7e1b6005de4138f0695be53063626758e9a7c13d29a9abd2", size = 1996026, upload-time = "2026-10-13T21:36:43.676Z" },
+    { url = "https://files.pythonhosted.org/packages/95/89/ba0fa82c6816e40060cd71a40e17da7f9789361f51a0a10615435ead4c2e/lco_banzai-1.40.0-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:e20d58d040369eba961aacd1b999970b7caf336ac9bb7b5b97731139adf37695", size = 1957661, upload-time = "2026-10-13T21:36:45.359Z" },
+    { url = "https://files.pythonhosted.org/packages/83/ff/af59ad09b5899867407affd88642e6e7a000d06d90b067fbba601aa14442/lco_banzai-1.40.0-cp314-cp314-musllinux_1_2_x86_64.whl", hash = "sha256:10bdf72117b77428c63b175cfd2861a59c09d76b86e9dfbbee6518e3d3499f3a", size = 1996157, upload-time = "2026-10-13T21:36:46.967Z" },
+    { url = "https://files.pythonhosted.org/packages/64/d2/9f40fb09318e6a00870f0eeb0b1e513a87de616e90eec570d5e1f37f3ff6/lco_banzai-1.40.0-cp314-cp314t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:c361328bffa47cd0c65046c15b128165e3849bbae3e82c4afb898e51ebcbddae", size = 1967149, upload-time = "2026-10-13T21:36:49.045Z" },
+    { url = "https://files.pythonhosted.org/packages/85/4f/25f04edd3805ecbc986bb6b841f08032dfbd6689439fd9e87fc1de15603a/lco_banzai-1.40.0-cp314-cp314t-musllinux_1_2_x86_64.whl", hash = "sha256:8c7327699507dc5185fba5abdd0a3851a2eba61793ef97d8b72602da63e1d17d", size = 2001642, upload-time = "2026-10-13T21:36:50.805Z" },
+    { url = "https://files.pythonhosted.org/packages/af/ee/ce039b19779117b0ad79601b7c4ccd0280be16afb1d114a390892dace2f4/lco_banzai-1.40.0-cp315-cp315-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:55458b7ed6f89acc29d50da6edf238e26c91f8018e80806b7520b767228c85d0", size = 1969113, upload-time = "2026-10-13T21:36:52.391Z" },
+    { url = "https://files.pythonhosted.org/packages/31/51/27e40974ece6983791f0a5c1abe1a3bc8727bb6a390d8ba74ba846707850/lco_banzai-1.40.0-cp315-cp315-musllinux_1_2_x86_64.whl", hash = "sha256:e491a12b259ac603ffe148e3436de4ed1b9dd11c5c2a9cab75e56263b09292ec", size = 2006400, upload-time = "2026-10-13T21:36:54.493Z" },
+    { url = "https://files.pythonhosted.org/packages/b6/20/3db267071d275e831b1c80d6826f986f50d219a0fd7091e9a0ec53cd93eb/lco_banzai-1.40.0-cp315-cp315t-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:2f9ee96b0a64b9dbd766c591b6494545f130336f88e42335b94d31e223934ae7", size = 1964390, upload-time = "2026-10-13T21:36:56.008Z" },
+    { url = "https://files.pythonhosted.org/packages/29/76/88037364c8acd09d1a628bc1bdf43271f021e813cb67ce13fcabc265b04e/lco_banzai-1.40.0-cp315-cp315t-musllinux_1_2_x86_64.whl", hash = "sha256:f1fbfd5540610f7c503ff6ac0feac366fec27077948b31db5436e28be6467603", size = 1998655, upload-time = "2026-10-13T21:36:58.136Z" },
 ]
 
 [[package]]

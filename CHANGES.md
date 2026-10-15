@@ -2,7 +2,7 @@
 
 ## 1.3.2 (2026-10-05)
 
-- Bump banzai dependency to 1.39.1, now installed from PyPI
+- Bump banzai dependency to 1.40.0, now installed from PyPI
 - Inherit default settings from banzai so that new banzai settings are always in the runtime context
 
 ## 1.3.1 (2026-05-13)
